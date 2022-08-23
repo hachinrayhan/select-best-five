@@ -7,5 +7,7 @@ document.getElementById('players').addEventListener('click', function (event) {
         const li = document.createElement('li');
         li.appendChild(document.createTextNode(player));
         ol.appendChild(li);
+        console.log(currentNode);
+        currentNode.setAttribute('disabled', true);
     }
 })
