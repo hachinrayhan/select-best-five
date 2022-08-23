@@ -15,9 +15,8 @@
     <header class="container text-center bg-dark mt-5">
         <h1 class="text-danger">Choose Your Super Players</h1>
         <p class="text-light">The Bangladesh national cricket team, popularly known as The Tigers, is administered by
-            the Bangladesh
-            Cricket Board. It is a Full Member of the International Cricket Council with Test, One-Day International and
-            T20 International status.</p>
+            the Bangladesh Cricket Board. It is a Full Member of the International Cricket Council with Test, One-Day
+            International and T20 International status. Please choose your favourite five from bd Tigers below.</p>
     </header>
     <!-- main -->
     <main class="container mt-5">
@@ -117,13 +116,18 @@
                 </div> <br>
                 <div class="border border-secondary px-3">
                     <h3 class="text-center"><u>Budget</u></h3>
-                    <span>Per Player:</span> <input id="player-cost" type="number">
-                    <button id="btn-calc" type="button" class="btn btn-primary">Calculate</button>
-                    <p>Player Expenses: $<span id="player-exp"></span></p>
-                    <span>Manager:</span><input id="manager-cost" type="number">
-                    <span>Coach:</span><input id="coach-cost" type="number">
-                    <button id="btn-calc-total" type="button" class="btn btn-primary">Calculate Total</button>
-                    <p>Total: <span class="text-danger">$<span id="total-exp"></span></span></p>
+                    <h6 class="d-flex justify-content-between"><span>Per Player:</span> <input id="player-cost"
+                            class="w-50" type="number"></h6>
+                    <button id="btn-calc" type="button" class="btn btn-primary btn-sm w-100 mt-2">Calculate</button>
+                    <h6>Player Expenses: $<span id="player-exp"></span></h6>
+                    <h6 class="d-flex justify-content-between"><span>Manager:</span><input id="manager-cost"
+                            class="w-50" type="number"></h6>
+                    <h6 class="d-flex justify-content-between"><span>Coach:</span><input id="coach-cost" class="w-50"
+                            type="number"></h6>
+                    <button id="btn-calc-total" type="button" class="btn btn-primary btn-sm w-100 mt-2">Calculate
+                        Total</button>
+                    <h6 class="d-flex justify-content-between mt-2"><span>Total: </span><span class="text-danger">$<span
+                                id="total-exp"></span></span></h6>
                 </div>
             </div>
         </div>
