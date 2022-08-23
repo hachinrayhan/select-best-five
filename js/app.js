@@ -6,6 +6,12 @@ document.getElementById('players').addEventListener('click', function (event) {
         const ol = document.getElementById('player-list');
         const li = document.createElement('li');
         li.appendChild(document.createTextNode(player));
+        /* limit list item in an ol */
+        const playerNum = document.querySelectorAll('#player-list li').length;
+        if (playerNum === 5) {
+            alert('You have reached your limit!');
+            return;
+        }
         ol.appendChild(li);
         currentNode.setAttribute('disabled', true);
     }
